@@ -2,10 +2,12 @@ import React from 'react';
 import Header from './Header';
 import "../App.css"
 import aboutme from "../images/profilephoto.png";
+import myresume from "../docs/myresume.pdf"
 
 const Home = () => {
     return (
   <>
+  <div className='fadeInUp-animation'>
   <div className='hello-container'>
 <div >
 <p className='hello-heading'>Hello,</p>
@@ -25,7 +27,14 @@ const Home = () => {
         my knowledge. Apart from coding, I also enjoy designing, dancing, sketching cars
          and playing computer games.
   </div>
-
+<div className='know-more'  >
+<a  href={myresume}
+        download="Ameya Awatade - Resume"
+        target="_blank"
+        rel="noreferrer"  class="bn5" style={{textDecoration:"none"}}>My Resume</a>
+<a href="https://www.linkedin.com/in/ameyaawatade/"  target='_blank' class="bn5" style={{textDecoration:"none"}}>Know more</a>
+</div>
+  </div>
   </>
     );
 };
