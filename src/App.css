@@ -3,11 +3,12 @@
 
 @keyframes fadeInUp {
   0% {
-    transform: translateY(100%);
+    transform: scale(2,2);
     opacity: 0;
   }
+ 
   100% {
-    transform: translateY(0%);
+    transform: scale(1,1);
     opacity: 1;
   }
 }
@@ -46,8 +47,30 @@ text-align: center;
   
 }
 .skill-image{
-  height: 100px;
+  height: 80px;
 
+}
+
+.project-container{
+  padding-top: 4rem; 
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 4%;
+  column-gap: 4vh;
+  row-gap: 3rem;
+  padding-bottom: 3rem;
+}
+.card{
+  width: 300px;
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card-img-top{
+  height: 100px;
+  width: 100px;
+  align-self: center;
+  margin-top: 2rem;
 }
 
 .hello-content{
@@ -206,4 +229,20 @@ border-radius: 50px;
       row-gap: 2px;
       padding-left: 0;
     }
+ 
+    .project-container{
+      justify-content: center;
+      flex-wrap: wrap;
+      row-gap: 2.8rem;
+      padding-left: 0;
+      padding-bottom: 5rem;
+    }
+
+    .card{
+      width: 300px;
+      height: 350px;
+      border-radius: 12px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    
 }
