@@ -12,6 +12,7 @@
     opacity: 1;
   }
 }
+ 
 
 .fadeInUp-animation {
   animation: 1s fadeInUp;
@@ -184,6 +185,13 @@ border-radius: 50px;
   border-radius: 10px;
 }
 
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  row-gap: 1.8rem; 
+}
+
 @media screen and (max-width:475px){
   .hello-content{
     font-size: 1rem;
@@ -244,5 +252,9 @@ border-radius: 50px;
       border-radius: 12px;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
-    
+    .contact-form{
+ 
+      width: 300px;
+      row-gap: 1rem; 
+    }
 }
