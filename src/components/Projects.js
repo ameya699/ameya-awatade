@@ -12,7 +12,7 @@ const Projects = () => {
           {data.map((project)=>{
             return (
             <div class="card" >
-                <img src= {reactlogo} class="card-img-top"  alt="project-thumbnail"/>
+                <img src= {project.thumbnail==undefined?reactlogo:project.thumbnail} class="card-img-top"  alt="project-thumbnail"/>
                     <div class="card-body">
                         <h5 class="card-title">{project.name}</h5>
                         <p class="card-text">{project.description}</p>
