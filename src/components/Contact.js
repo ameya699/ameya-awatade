@@ -40,6 +40,7 @@ const Contact = () => {
                     name="email"
                   placeholder="Email"
                   onChange={handleChange}
+                   
                 />
               </div>
             </div>

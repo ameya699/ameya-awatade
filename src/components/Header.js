@@ -1,7 +1,11 @@
 import React from "react";
 import {Link,NavLink} from "react-router-dom";
-
+import { Location, useLocation } from "react-router";
 const Header=()=>{
+  const location=useLocation();
+  const isActive=(pathName)=>{
+    return location.pathname===pathName;
+  }
     return(
         <>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -10,20 +14,20 @@ const Header=()=>{
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" style={{textAlign:"right"}} id="navbarNav">
         <Link to="/">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link"><NavLink to="/" class>Home</NavLink></a>
+      <ul class="navbar-nav"  >
+        <li class="nav-item" >
+           <Link to="/" class="nav-link" style={{fontWeight:isActive("/") ?"bold":"normal"}} >Home</Link>  
         </li>
         <li class="nav-item">
-          <a class="nav-link" ><NavLink to="/skills" >Skills</NavLink></a>
+          < Link to="/skills" class="nav-link" style={{fontWeight:isActive("/skills") ?"bold":"normal"}} >Skills</Link>  
         </li>
         <li class="nav-item">
-          <a class="nav-link" ><NavLink to="/projects" >Projects</NavLink></a>
+          < Link to="/projects" class="nav-link" style={{fontWeight:isActive("/projects") ?"bold":"normal"}}  >Projects</Link>  
         </li>
         <li class="nav-item">
-          <a class="nav-link" ><NavLink to="/contact" >Contact</NavLink></a>
+          < Link to="/contact" class="nav-link" style={{fontWeight:isActive("/contact") ?"bold":"normal"}}  >Contact</Link>  
         </li>
       </ul>
       </Link>

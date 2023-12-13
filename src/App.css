@@ -26,6 +26,12 @@ padding-left: 10%;
 font-weight:900;
 
 }
+ a { 
+  text-decoration: none!important;
+ 
+}
+
+ 
 
 .skill-container{
   padding-top: 3rem;
@@ -257,4 +263,5 @@ border-radius: 50px;
       width: 300px;
       row-gap: 1rem; 
     }
+  
 }
