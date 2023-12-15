@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Tooltip from '@mui/material/Tooltip/Tooltip';
+ 
+import { FiMail ,FiInstagram,FiLinkedin,FiGithub} from "react-icons/fi";
 const Contact = () => {
     const [data,setData]=useState({email:'',message:''});
   
@@ -58,6 +61,29 @@ const Contact = () => {
           </form>
          
            </div>
+        </div>
+        <div className="socialhandles-container">
+          
+        <Tooltip  title="Linkedin">
+        <a   href="https://www.linkedin.com/in/ameyaawatade/" target="_blank">
+        <FiLinkedin style={{fontSize:"2rem",color:"212529"}}  />
+        </a>
+        </Tooltip>
+        <Tooltip  title="Github">
+        <a  href="https://github.com/ameya699" target="_blank">
+        <FiGithub style={{fontSize:"2rem",color:"212529"}} />
+        </a>
+        </Tooltip>
+        <Tooltip  title="Mail">
+        <a  href="mailto:awatadeameya68@gmail.com" target="_blank">
+        <FiMail style={{fontSize:"2rem",color:"212529"}} />
+        </a>
+        </Tooltip>
+        <Tooltip  title="Instagram">
+          <a   href="https://www.instagram.com/ameyaawatade/" target="_blank">
+        <FiInstagram style={{fontSize:"2rem",color:"212529"}} />
+        </a>
+        </Tooltip>
         </div>
       </div>
     </>

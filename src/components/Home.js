@@ -10,6 +10,7 @@ const Home = () => {
   <div className='fadeInUp-animation'>
   <div className='hello-container'>
 <div >
+ 
 <p className='hello-heading'>Hello,</p>
   <p className='hello-content'>I am Ameya Awatade </p>
   <p className='hello-content' style={{color:"grey",fontStyle:"italic"}}>Software Developer at Persistent Systems</p>
@@ -24,7 +25,7 @@ const Home = () => {
         my work in developing projects using generative AI and for creating
         enterprise applications. I am a quick learner and can effectively apply
         my knowledge. Apart from coding, I also enjoy designing, dancing, sketching cars
-         and playing computer games.
+        and playing computer games.
   </div>
 <div className='know-more'  >
 <a  href={myresume}
