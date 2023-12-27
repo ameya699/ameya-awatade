@@ -41,8 +41,8 @@ const projects=[{
 },
 {
   
-    name:"Clothing Managment System",
-    description:"E-commerce and inventory management for a Clothing Shop (Tech Stack - React, Express, Node, Session, HTML, CSS, Material UI)",
+    name:"Clothing Managment",
+    description:"E-commerce and inventory management(Tech Stack - React, Express, Node, Session, HTML, CSS, Material UI)",
     projectlink:"https://github.com/ameya699/ronak-mern-site",
     thumbnail:undefined
 },

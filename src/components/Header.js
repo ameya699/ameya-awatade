@@ -11,24 +11,24 @@ const Header=()=>{
         <>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand">AA</a>
+    <a class="navbar-brand" style={{color:"white"}} >AA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <MdOutlineMenu />
     </button>
-    <div class="collapse navbar-collapse" style={{textAlign:"center"}} id="navbarNav">
+    <div class="collapse navbar-collapse" style={{textAlign:"center",color:"white"}} id="navbarNav">
         <Link to="/">
       <ul class="navbar-nav"  >
         <li class="nav-item" >
-           <Link to="/" class="nav-link" style={{fontWeight:isActive("/") ?"bold":"normal"}} >Home</Link>  
+           <Link to="/" class="nav-link" style={{fontWeight:isActive("/") ?"bold":"normal",color:"white"}} >Home</Link>  
         </li>
         <li class="nav-item">
-          < Link to="/skills" class="nav-link" style={{fontWeight:isActive("/skills") ?"bold":"normal"}} >Skills</Link>  
+          < Link to="/skills" class="nav-link" style={{fontWeight:isActive("/skills") ?"bold":"normal",color:"white"}} >Skills</Link>  
         </li>
         <li class="nav-item">
-          < Link to="/projects" class="nav-link" style={{fontWeight:isActive("/projects") ?"bold":"normal"}}  >Projects</Link>  
+          < Link to="/projects" class="nav-link" style={{fontWeight:isActive("/projects") ?"bold":"normal",color:"white"}}  >Projects</Link>  
         </li>
         <li class="nav-item">
-          < Link to="/contact" class="nav-link" style={{fontWeight:isActive("/contact") ?"bold":"normal"}}  >Contact</Link>  
+          < Link to="/contact" class="nav-link" style={{fontWeight:isActive("/contact") ?"bold":"normal",color:"white"}}  >Contact</Link>  
         </li>
       </ul>
       </Link>

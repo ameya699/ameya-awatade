@@ -13,7 +13,7 @@ const Home = () => {
  
 <p className='hello-heading'>Hello,</p>
   <p className='hello-content'>I am Ameya Awatade </p>
-  <p className='hello-content' style={{color:"grey",fontStyle:"italic"}}>Software Developer at Persistent Systems</p>
+  <p className='hello-subcontent' style={{color:"grey",fontStyle:"italic"}}>Software Developer at Persistent Systems</p>
 </div>
 <img src={aboutme} className='profile'  alt="myphoto"/>
   </div>

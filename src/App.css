@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+*{
+  font-family: "Comfortaa" !important;
+}
+
+.navbar svg{
+  color: white;
+}
 
 @keyframes fadeInUp {
   0% {
-    transform: scale(2,2);
+    transform: scale(1.5,1.5);
     opacity: 0;
   }
  
@@ -13,9 +24,13 @@
   }
 }
  
+.bg-body-tertiary{
+  background-color:#212529!important;
+}
+ 
 
 .fadeInUp-animation {
-  animation: 1s fadeInUp;
+  animation: 1s fadeInUp ;
 }
 
 .hello-heading{
@@ -64,6 +79,7 @@ text-align: center;
 }
 
 .project-container{
+  
   padding-top: 4rem; 
   display: flex;
   flex-wrap: wrap;
@@ -90,8 +106,14 @@ text-align: center;
   font-size: 2rem;
 padding-left: 10%;
 font-weight: 550;
-}
 
+}
+.hello-subcontent{
+  font-family: "Indie Flower"!important;
+  font-size: 2rem;
+padding-left: 10%;
+font-weight: 550;
+}
 .hello-container{
 display: flex;
 column-gap: 19rem;
@@ -106,11 +128,12 @@ border-radius: 50px;
 
 .hello-description{
   padding-left: 4.2%;
-  font-family: 'Roboto', sans-serif;
+ 
   font-size: 1rem;
   line-height: 30px;
   word-spacing: 4px;
   padding-top: 3rem;
+  
 }
 
 .know-more{ 
@@ -246,7 +269,7 @@ border-radius: 50px;
     .skill-description{
  
       padding-top: 4rem;
- 
+      padding-bottom: 4rem;
       justify-content: center;
       column-gap: 3rem;
       row-gap: 3rem;
