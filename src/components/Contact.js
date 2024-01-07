@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <>
       <div className="fadeInUp-animation">
-        <div className="skill-container">
+        <div className="contact-container">
           <div className="skill-heading">Write to me</div>
            <div style={{display:"flex",justifyContent:"center",paddingTop:"4rem"}}>
             <form className="contact-form" onSubmit={handleformsubmit}>
