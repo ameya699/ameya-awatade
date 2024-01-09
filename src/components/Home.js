@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import "../App.css"
 import aboutme from "../images/profilephoto.png";
-import myresume from "../docs/myresume.pdf"
+ 
 
 const Home = () => {
     return (
@@ -28,7 +28,7 @@ const Home = () => {
         and playing computer games.
   </div>
 <div className='know-more'  >
-<a  href={myresume}
+<a  href= 'https://drive.google.com/uc?id=13yOpdIw4-kD4QMx7-sFpxPm-6WzcWWHT&export=download'
         download="Ameya Awatade - Resume"
         target="_blank"
         rel="noreferrer"  class="bn5" style={{textDecoration:"none"}}>My Resume</a>
