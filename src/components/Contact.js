@@ -1,16 +1,62 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Tooltip from '@mui/material/Tooltip/Tooltip';
+import { Bounce, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
  
 import { FiMail ,FiInstagram,FiLinkedin,FiGithub} from "react-icons/fi";
 import { RiWhatsappLine } from "react-icons/ri";
-import { SecurityTwoTone } from "@mui/icons-material";
+
+const successToast=()=>toast.success('Thank you for your time!! 😇', {
+  position: "top-right",
+  autoClose: 3000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+  theme: "dark",
+  transition: Bounce,
+  });
+const failureToast=()=>toast.error('Cannot Submit, errored 🥲', {
+    position: "top-right",
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    transition: Bounce,
+    });
+const Toast=()=>{
+  return(
+<>
+    <ToastContainer
+    position="top-right"
+    autoClose={3000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    theme="dark"
+    transition={Bounce}
+/>
+</>
+  )
+  
+}
+
 const Contact = () => {
     const contactmeiconstyles={fontSize:"2rem",color:"212529"}
     const [data,setData]=useState({email:'',message:''});
     const secretkey=process.env.REACT_APP_EMAILJS_KEY;
     const handleChange = (e) => {
         setData({ ...data, [e.target.name]: e.target.value });
+        console.log(data);
       };
 
       const handleformsubmit = () => {
@@ -32,14 +78,16 @@ const Contact = () => {
           phone_num: phoneNumber,
           message: message,
         });
-        setData({ name: "", email: "", phoneNumber: "", message: "" });
-        }
+        setData({email: "",message: "" });
+        failureToast();
+      }
+      
         catch(err){
-          console.log(err);
-        }
+          successToast();
       }; 
   return (
     <>
+      <ToastContainer/>
       <div className="fadeInUp-animation">
         <div className="contact-container">
           <div className="skill-heading">Write to me</div>
@@ -54,6 +102,7 @@ const Contact = () => {
                     name="email"
                   placeholder="Email"
                   onChange={handleChange}
+                  value={data.email}
                    
                 />
               </div>
@@ -62,7 +111,7 @@ const Contact = () => {
             <div class="form-row">
               <div class="form-group col-md ">
  
-                <textarea rows={4} type="text" class="form-control" name="message"  placeholder="Message" onChange={handleChange} />
+                <textarea rows={4} type="text" class="form-control" name="message" value={data.message} placeholder="Message" onChange={handleChange} />
               </div>
             </div>
             <div class="form-group"></div>
