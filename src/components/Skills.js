@@ -11,7 +11,7 @@ import powerautomatelogo from "../images/powerautomatelogo.png"
 import tibcologo from "../images/tibcologo.png"
 import oiclogo from "../images/oiclogo.png"
 import { DiReact,DiNodejs,DiMsqlServer,DiMysql,DiMongodb,DiJsBadge } from "react-icons/di";
-import { SiPowerapps,SiPowerautomate,SiOracle,SiExpress,SiHtml5 ,SiCss3,SiDataverse,SiPeerlist} from "react-icons/si";
+import { SiPowerapps,SiPowerautomate,SiOracle,SiExpress,SiHtml5 ,SiCss3,SiDataverse,SiPeerlist,SiTypescript} from "react-icons/si";
  
 const Skills = () => {
 
@@ -34,6 +34,9 @@ const Skills = () => {
               </Tooltip>
               <Tooltip title='Node.js' arrow>
             <p> <DiNodejs className='skilllogos'/> </p>
+            </Tooltip>
+            <Tooltip title='TypeScript' arrow>
+            <p> <SiTypescript className='skilllogos'/> </p>
             </Tooltip>
             <Tooltip title='Javascript' arrow>
             <p> <DiJsBadge className='skilllogos'/> </p>
