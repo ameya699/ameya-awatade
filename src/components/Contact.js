@@ -79,11 +79,11 @@ const Contact = () => {
           message: message,
         });
         setData({email: "",message: "" });
-        failureToast();
+        successToast();
       }
-        catch(err){
-          successToast();
-      }; 
+      catch(err){
+          failureToast();
+      }
     }
   return (
     <>
