@@ -81,10 +81,10 @@ const Contact = () => {
         setData({email: "",message: "" });
         failureToast();
       }
-      
         catch(err){
           successToast();
       }; 
+    }
   return (
     <>
       <ToastContainer/>
