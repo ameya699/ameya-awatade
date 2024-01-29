@@ -3,6 +3,7 @@ import webweather from "../images/webweather.png"
 import qr from "../images/qrcode.png"
 import url from "../images/url.png"
 import expense from "../images/expense.png"
+import mernblog from '../images/mernblog.png'
  
 
 const projects=[{
@@ -17,6 +18,12 @@ const projects=[{
     description:"Web App to get weather in a given area using geolocation, city and country (Tech Stack - React, Weather API, HTML, CSS)",
     projectlink:"https://webweather-two.vercel.app/",
     thumbnail:webweather
+},
+{
+    name:"MERN Blog",
+    description:"New Blog website compared to the previous ejs one. (Tech Stack - React, Weather API, HTML, CSS) ",
+    projectlink:"https://github.com/ameya699/MERN_BLOGS",
+    thumbnail:mernblog 
 },
 {
   
@@ -52,7 +59,7 @@ const projects=[{
     description:"Create , edit and delete tasks (Tech Stack - React, Express, Node, HTML, CSS)",
     projectlink:"https://github.com/ameya699/todoApp",
     thumbnail:undefined 
-},
+}
 ]
 
 export  {projects};
