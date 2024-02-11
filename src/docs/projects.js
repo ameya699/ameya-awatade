@@ -4,6 +4,7 @@ import qr from "../images/qrcode.png"
 import url from "../images/url.png"
 import expense from "../images/expense.png"
 import mernblog from '../images/mernblog.png'
+import backendlogo from "../images/backend.jpg"
  
 
 const projects=[{
@@ -20,10 +21,16 @@ const projects=[{
     thumbnail:webweather
 },
 {
-    name:"MERN Blog",
-    description:"New Blog website compared to the previous ejs one. (Tech Stack - React, Weather API, HTML, CSS) ",
-    projectlink:"https://github.com/ameya699/MERN_BLOGS",
+    name:"MERN Blog (Main website/Front end)",
+    description:"New Blog website compared to the previous ejs one. (Tech Stack - React, Nodejs, HTML, CSS) ",
+    projectlink:"https://mern-blogs-seven.vercel.app/",
     thumbnail:mernblog 
+},
+{
+    name:"MERN Blog (Backend)",
+    description:"Backend for MERN blog website. Developed apis for the React Web Applicaton. (Tech Stack - Nodejs, Expressjs)",
+    projectlink:"https://github.com/ameya699/MERN_SERVER",
+    thumbnail:backendlogo
 },
 {
   
