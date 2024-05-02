@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import "../App.css"
 import aboutme from "../images/profilephoto.png";
-import Resume from "../docs/Ameya_Awatade_Resume.pdf"
+import Resume from "../docs/Ameya Awatade_Resume.pdf"
 
 const Home = () => {
     return (
