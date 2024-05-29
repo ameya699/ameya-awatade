@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 *{
   font-family: "Comfortaa" !important;
 }
@@ -68,7 +69,7 @@ font-weight:900;
 }
 
 .skill-heading{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
 font-size: 2rem;
 text-align: center;
  
@@ -105,6 +106,13 @@ text-align: center;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
   z-index: 1;
+  background: linear-gradient(#585c60 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+  transition: 0.4s, background-position 0s;
+}
+
+.card:hover{
+  --p: 100%;
+  color: #fff;
 }
 .card-body{
   display: flex;
@@ -129,10 +137,13 @@ font-weight: 550;
 
 }
 .hello-subcontent{
-  font-family: "Indie Flower"!important;
+  /* font-family: "Indie Flower"!important; */
+  font-family: "Source Code Pro", monospace !important;
+  font-optical-sizing: auto;
   font-size: 2rem;
 padding-left: 10%;
 font-weight: 550;
+
 }
 .hello-container{
 display: flex;
@@ -148,7 +159,7 @@ border-radius: 50px;
 
 .hello-description{
   padding-left: 4.2%;
- 
+  font-family: "Source Code Pro", monospace !important;
   font-size: 1rem;
   line-height: 30px;
   word-spacing: 4px;
@@ -273,7 +284,7 @@ border-radius: 50px;
       
       padding-left: 5%;
       padding-right: 0.4rem;
-      font-family: 'Roboto', sans-serif;
+      /* font-family: 'Roboto', sans-serif; */
       line-height: 25px;
       word-spacing:2px;
       padding-top: 1.6rem;
