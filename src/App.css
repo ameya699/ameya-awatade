@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
   font-family: "Comfortaa" !important;
 }
@@ -82,6 +85,7 @@ text-align: center;
   column-gap: 5rem;
   row-gap: 4rem;
   
+  
 }
 .skill-image{
   height: 80px;
@@ -130,7 +134,8 @@ text-align: center;
 }
 
 .hello-content{
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Dancing Script", cursive !important;
   font-size: 2rem;
 padding-left: 10%;
 font-weight: 550;
@@ -138,11 +143,12 @@ font-weight: 550;
 }
 .hello-subcontent{
   /* font-family: "Indie Flower"!important; */
-  font-family: "Source Code Pro", monospace !important;
+  /* font-family: "Source Code Pro", monospace !important; */
+  font-family: "Dancing Script", cursive !important;
   font-optical-sizing: auto;
   font-size: 2rem;
 padding-left: 10%;
-font-weight: 550;
+font-weight: bolder;
 
 }
 .hello-container{
@@ -159,11 +165,13 @@ border-radius: 50px;
 
 .hello-description{
   padding-left: 4.2%;
-  font-family: "Source Code Pro", monospace !important;
-  font-size: 1rem;
-  line-height: 30px;
+  /* font-family: "Source Code Pro", monospace !important; */
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 1.2rem;
+  line-height: 40px;
   word-spacing: 4px;
   padding-top: 3rem;
+  font-weight: 500;
   
 }
 

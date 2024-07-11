@@ -19,7 +19,7 @@ const Home = () => {
   </div>
   <div className='hello-description'>I am passionate about Full
         Stack Development and excel in using a diverse skill set that includes
-        Express, React, Node, MongoDB, Restful Web Services and APIs...etc. I have
+        Express, React, Node, MongoDB, Oracle Integration Cloud, Restful Web Services and APIs...etc. I have
         experience in designing elegant user interfaces, building robust
         back-end services, and creating RESTful APIs. I have been recognized for
         my work in developing projects using generative AI and for creating
