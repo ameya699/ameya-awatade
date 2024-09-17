@@ -5,9 +5,23 @@ import url from "../images/url.png"
 import expense from "../images/expense.png"
 import mernblog from '../images/mernblog.png'
 import backendlogo from "../images/backend.jpg"
- 
+import foodZies from "../images/foodzies.png"
+import netflixapp from "../images/netflixapp.png" 
 
-const projects=[{
+const projects=[
+    {
+        name:"NetFlixApp",
+        description:"Developed a Netflix clone having the basic functionality of browsing and searching different movies, series and content over the internet.(Tech Stack - React, Rest APIs, Tailwind CSS, HTML)",
+        projectlink:"https://netflix-app-navy.vercel.app/",
+        thumbnail:netflixapp
+    },
+    {
+        name:"FoodZies",
+        description:"This is a food ordering platform, get location based searches and recommendations, view curated menus and hotels. (Tech Stack - React, Rest APIs, Tailwind CSS, HTML)",
+        projectlink:"https://foodzies.vercel.app/",
+        thumbnail:foodZies
+    },
+    {
     name:"Bloggy",
     description:"This is a website for everyone to manage their blogs (Tech Stack - Express, Node, MongoDB, HTML, CSS)",
     projectlink:"https://bloggy-i6jh.onrender.com",
